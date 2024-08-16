@@ -33,30 +33,35 @@ Ensure you have the following installed on your machine:
 
    ```sh
    git clone https://github.com/yourusername/multi-step-form.git
-   cd multi-step-form
+   cd multi-step-form 
 
 2. **Install dependencies:**
+   
+   Using npm:
+   ```sh
+   npm install
+   ``` 
+   Using yarn:
 
-    Using npm:
-
-    npm install
-
-    Using yarn:
-
-    yarn install
+   ```sh
+   yarn install
 
 ### Running the Application
 To start the development server, run:
 
 Using npm:
 
+```sh
 npm start
+```
 
 Using yarn:
 
+```sh
 yarn start
+```
 
-Open http://localhost:3000 to view it in your browser.
+Open [http://localhost:3000] to view it in your browser.
 
 ### Project Structure
 
