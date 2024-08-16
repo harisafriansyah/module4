@@ -92,21 +92,21 @@ multi-step-form/
 ### Usage
 1. Navigate through the form steps:
 
-The form starts with Step 1, where the user inputs their full name, email, and date of birth. After filling out the fields, click "Next" to proceed to Step 2.
+   The form starts with Step 1, where the user inputs their full name, email, and date of birth. After filling out the fields, click "Next" to proceed to Step 2.
 
 2. Form Validation:
 
-Each step includes validation rules defined using Yup. If a user attempts to proceed without filling out required fields or entering invalid data, appropriate error messages will be displayed.
+   Each step includes validation rules defined using Yup. If a user attempts to proceed without filling out required fields or entering invalid data, appropriate error messages will be displayed.
 
 3. Submission:
 
-After completing all steps, clicking "Submit" will display the entered data.
+   After completing all steps, clicking "Submit" will display the entered data.
 
-Customization
+### Customization
 - Styling:
 
-The project uses Tailwind CSS for styling. You can customize the appearance by modifying the tailwind.config.js file and updating the classes in the component files.
+   The project uses Tailwind CSS for styling. You can customize the appearance by modifying the tailwind.config.js file and updating the classes in the component files.
 
 - Validation:
 
-Validation schemas are defined using Yup in the validationSchema array within MultiStepForm.tsx. You can modify or add new validation rules as per your requirements.
+   Validation schemas are defined using Yup in the validationSchema array within MultiStepForm.tsx. You can modify or add new validation rules as per your requirements.
