@@ -33,48 +33,55 @@ Ensure you have the following installed on your machine:
 
    ```sh
    git clone https://github.com/yourusername/multi-step-form.git
-   cd multi-step-form
+   cd multi-step-form 
 
 2. **Install dependencies:**
+   
+   Using npm:
+   ```sh
+   npm install
+   ``` 
+   Using yarn:
 
-    Using npm:
-
-    npm install
-
-    Using yarn:
-
-    yarn install
+   ```sh
+   yarn install
 
 ### Running the Application
 To start the development server, run:
 
 Using npm:
 
+```sh
 npm start
+```
 
 Using yarn:
 
+```sh
 yarn start
+```
 
 Open http://localhost:3000 to view it in your browser.
 
 ### Project Structure
 
+```arduino
 multi-step-form/
 ├── public/
 ├── src/
 │   ├── components/
+|   |   ├── MultiStepForm.tsx
 │   │   ├── Step1.tsx
 │   │   ├── Step2.tsx
 │   │   ├── Step3.tsx
 │   ├── App.tsx
-│   ├── index.tsx
-│   ├── MultiStepForm.tsx
+│   ├── index.tsx  
 ├── .gitignore
 ├── package.json
 ├── README.md
 ├── tailwind.config.js
 ├── tsconfig.json
+```
 
 ### Components
 - Step1.tsx: Contains the form fields for the first step.
@@ -85,21 +92,21 @@ multi-step-form/
 ### Usage
 1. Navigate through the form steps:
 
-The form starts with Step 1, where the user inputs their full name, email, and date of birth. After filling out the fields, click "Next" to proceed to Step 2.
+   The form starts with Step 1, where the user inputs their full name, email, and date of birth. After filling out the fields, click "Next" to proceed to Step 2.
 
 2. Form Validation:
 
-Each step includes validation rules defined using Yup. If a user attempts to proceed without filling out required fields or entering invalid data, appropriate error messages will be displayed.
+   Each step includes validation rules defined using Yup. If a user attempts to proceed without filling out required fields or entering invalid data, appropriate error messages will be displayed.
 
 3. Submission:
 
-After completing all steps, clicking "Submit" will display the entered data.
+   After completing all steps, clicking "Submit" will display the entered data.
 
-Customization
+### Customization
 - Styling:
 
-The project uses Tailwind CSS for styling. You can customize the appearance by modifying the tailwind.config.js file and updating the classes in the component files.
+   The project uses Tailwind CSS for styling. You can customize the appearance by modifying the tailwind.config.js file and updating the classes in the component files.
 
 - Validation:
 
-Validation schemas are defined using Yup in the validationSchema array within MultiStepForm.tsx. You can modify or add new validation rules as per your requirements.
+   Validation schemas are defined using Yup in the validationSchema array within MultiStepForm.tsx. You can modify or add new validation rules as per your requirements.
