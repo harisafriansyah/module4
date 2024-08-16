@@ -61,10 +61,11 @@ Using yarn:
 yarn start
 ```
 
-Open [http://localhost:3000] to view it in your browser.
+Open http://localhost:3000 to view it in your browser.
 
 ### Project Structure
 
+```arduino
 multi-step-form/
 ├── public/
 ├── src/
@@ -80,6 +81,7 @@ multi-step-form/
 ├── README.md
 ├── tailwind.config.js
 ├── tsconfig.json
+```
 
 ### Components
 - Step1.tsx: Contains the form fields for the first step.
