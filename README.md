@@ -70,12 +70,12 @@ multi-step-form/
 ├── public/
 ├── src/
 │   ├── components/
+|   |   ├── MultiStepForm.tsx
 │   │   ├── Step1.tsx
 │   │   ├── Step2.tsx
 │   │   ├── Step3.tsx
 │   ├── App.tsx
-│   ├── index.tsx
-│   ├── MultiStepForm.tsx
+│   ├── index.tsx  
 ├── .gitignore
 ├── package.json
 ├── README.md
