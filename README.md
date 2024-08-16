@@ -39,13 +39,11 @@ Ensure you have the following installed on your machine:
 
     Using npm:
 
-Using npm:
+    npm install
 
-npm install
+    Using yarn:
 
-Using yarn:
-
-yarn install
+    yarn install
 
 ### Running the Application
 To start the development server, run:
