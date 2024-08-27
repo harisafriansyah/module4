@@ -1,13 +1,32 @@
 import React from 'react';
-import MultiStepForm from './component/MultiStepForm';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import RegisterPage from './pages/Register';
+import LoginPage from './pages/Login';
+import CategoryPage from './pages/Category';
+import Navbar from './component/Navbar';
+import ProtectedRoute from './component/ProtectedRoute';
+import { AppProvider } from './context/AppContext';
+
 
 const App: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-full bg-gray-100">
-      <div className="w-full p-8 bg-white rounded shadow-md">
-        <MultiStepForm />
-      </div>
-    </div>
+    <Router>
+      <AppProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route
+            path="/categories"
+            element={
+              <ProtectedRoute>
+                <CategoryPage />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </AppProvider>
+    </Router>
   );
 };
 
